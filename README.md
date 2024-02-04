@@ -1,2 +1,3 @@
 # operation_green_tea
-Eco
+Repository for ecotourism blog
+
