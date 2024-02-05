@@ -8,10 +8,10 @@ from langchain.llms import ollama
 WizardVicunaUncensored = ollama(model="wizard-vicuna-uncensored")
 
 # To Load GPT-4
-api_openai = os.environ.get("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")
+api_openai = os.environ.get("Openai_API_Key")
 
 #To Load gemini
-api_gemini = os.environ.get("AIzaSyDAqPAFjM67_LImGUI6cbhDHa-BThlVs64")
+api_gemini = os.environ.get("Gemini_API_Key")
 llm = ChatGoogleGenerativeAI(
     model="gemini-pro", verbose=True, temperature=0.1, google_api_key=api_gemini
 )
