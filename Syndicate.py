@@ -1,4 +1,5 @@
 import os
+
 from crewai import Agent, Task, Crew, Process
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.llms import ollama
@@ -8,10 +9,10 @@ from langchain.llms import ollama
 WizardVicunaUncensored = ollama(model="wizard-vicuna-uncensored")
 
 # To Load GPT-4
-api_openai = os.environ.get("Openai_API_Key")
+api_openai = os.environ.get("OPENAI_API_KEY")
 
 #To Load gemini
-api_gemini = os.environ.get("Gemini_API_Key")
+api_gemini = os.environ.get("GEMINI_API_KEY")
 llm = ChatGoogleGenerativeAI(
     model="gemini-pro", verbose=True, temperature=0.1, google_api_key=api_gemini
 )
