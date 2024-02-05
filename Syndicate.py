@@ -2,11 +2,11 @@ import os
 
 from crewai import Agent, Task, Crew, Process
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.llms import ollama
+from langchain_community.llms import ollama
 
 
 # To Load Local models through Ollama
-WizardVicunaUncensored = ollama(model="wizard-vicuna-uncensored")
+wizard_vicuna_uncensored = ollama(model="wizard-vicuna-uncensored")
 
 # To Load GPT-4
 api_openai = os.environ.get("OPENAI_API_KEY")
